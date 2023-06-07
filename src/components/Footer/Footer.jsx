@@ -20,11 +20,6 @@ const quickLinks = [
     display: "Car Listing",
   },
   {
-    path: "/blogs",
-    display: "Blog",
-  },
-
-  {
     path: "/contact",
     display: "Contact",
   },
@@ -43,17 +38,13 @@ const Footer = () => {
                 <Link to="/home" className=" d-flex align-items-center gap-2">
                   <i class="ri-car-line"></i>
                   <span>
-                    Rent Car <br /> Service
+                    Good City <br /> Cars
                   </span>
                 </Link>
               </h1>
             </div>
             <p className="footer__logo-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur, distinctio, itaque reiciendis ab cupiditate harum ex
-              quam veniam, omnis expedita animi quibusdam obcaecati mollitia?
-              Delectus et ad illo recusandae temporibus?
-            </p>
+            Contact Good City Cars today for reliable and quality car rentals in Marrakech. We are committed to exceptional customer service, competitive pricing, and convenient online booking. Experience the freedom of exploring Marrakech with our trusted car rental services. Your satisfaction is our priority.            </p>
           </Col>
 
           <Col lg="2" md="4" sm="6">
@@ -72,33 +63,19 @@ const Footer = () => {
           <Col lg="3" md="4" sm="6">
             <div className="mb-4">
               <h5 className="footer__link-title mb-4">Head Office</h5>
-              <p className="office__info">123 Zindabazar, Sylhet, Bangladesh</p>
-              <p className="office__info">Phone: +0995345875365</p>
+              <p className="office__info">Marrakech</p>
+              <p className="office__info">Phone: (+212)6 11 57 57 38</p>
 
-              <p className="office__info">Email: muhib5532@gmail.com</p>
+              <p className="office__info">Email: fouadhala@goodcitycars.com</p>
 
-              <p className="office__info">Office Time: 10am - 7pm</p>
-            </div>
-          </Col>
-
-          <Col lg="3" md="4" sm="12">
-            <div className="mb-4">
-              <h5 className="footer__link-title">Newsletter</h5>
-              <p className="section__description">Subscribe our newsletter</p>
-              <div className="newsletter">
-                <input type="email" placeholder="Email" />
-                <span>
-                  <i class="ri-send-plane-line"></i>
-                </span>
-              </div>
+              <p className="office__info">Available 24/7 via message</p>
             </div>
           </Col>
 
           <Col lg="12">
             <div className="footer__bottom">
               <p className="section__description d-flex align-items-center justify-content-center gap-1 pt-4">
-                <i class="ri-copyright-line"></i>Copyright {year}, Developed by
-                Muhibur Rahman. All rights reserved.
+                <i class="ri-copyright-line"></i>Copyright {year}
               </p>
             </div>
           </Col>

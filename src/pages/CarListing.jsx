@@ -33,6 +33,9 @@ const CarListing = () => {
           </Row>
         </Container>
       </section>
+      <a href="https://api.whatsapp.com/send?phone=0021211575738&text=Bonjour," className="float" target="_blank" rel="noreferrer">
+        <i className="fa fa-whatsapp my-float"></i>
+      </a>
     </Helmet>
   );
 };

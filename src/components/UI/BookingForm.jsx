@@ -1,73 +1,68 @@
 import React from "react";
 import "../../styles/booking-form.css";
-import { Form, FormGroup } from "reactstrap";
+import { FormGroup } from "reactstrap";
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const BookingForm = () => {
+  const form = useRef();
+  const currentURL = window.location.href;
+  const car = currentURL.split("%20")[1]
+
   const submitHandler = (event) => {
     event.preventDefault();
+
+    emailjs.sendForm('service_tn8aqqn', 'template_b7j63pd', form.current, 'hWJgwz_HFoKB_gnZD')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
   };
   return (
-    <Form onSubmit={submitHandler}>
+    <form ref={form} onSubmit={submitHandler}>
       <FormGroup className="booking__form d-inline-block me-4 mb-4">
-        <input type="text" placeholder="First Name" />
+        <input type="text" placeholder="First Name" name="user_fn"/>
       </FormGroup>
       <FormGroup className="booking__form d-inline-block ms-1 mb-4">
-        <input type="text" placeholder="Last Name" />
+        <input type="text" placeholder="Last Name" name="user_ln"/>
       </FormGroup>
 
       <FormGroup className="booking__form d-inline-block me-4 mb-4">
-        <input type="email" placeholder="Email" />
+        <input type="email" placeholder="Email" name="user_email"/>
       </FormGroup>
       <FormGroup className="booking__form d-inline-block ms-1 mb-4">
-        <input type="number" placeholder="Phone Number" />
+        <input type="number" placeholder="Phone Number" name="user_number"/>
       </FormGroup>
 
       <FormGroup className="booking__form d-inline-block me-4 mb-4">
-        <input type="text" placeholder="From Address" />
+        <input type="text" placeholder="From Address" name="user_start_address"/>
       </FormGroup>
       <FormGroup className="booking__form d-inline-block ms-1 mb-4">
-        <input type="text" placeholder="To Address" />
+        <input type="text" placeholder="To Address" name="user_end_address"/>
       </FormGroup>
-
       <FormGroup className="booking__form d-inline-block me-4 mb-4">
-        <select name="" id="">
-          <option value="1 person">1 Person</option>
-          <option value="2 person">2 Person</option>
-          <option value="3 person">3 Person</option>
-          <option value="4 person">4 Person</option>
-          <option value="5+ person">5+ Person</option>
-        </select>
+        <input type="date" placeholder="Start Date" name="start_date"/>
       </FormGroup>
-      <FormGroup className="booking__form d-inline-block ms-1 mb-4">
-        <select name="" id="">
-          <option value="1 luggage">1 luggage</option>
-          <option value="2 luggage">2 luggage</option>
-          <option value="3 luggage">3 luggage</option>
-          <option value="4 luggage">4 luggage</option>
-          <option value="5+ luggage">5+ luggage</option>
-        </select>
+      <FormGroup className="booking__form d-inline-block me-1 mb-4">
+        <input type="date" placeholder="End Date" name="end_date"/>
       </FormGroup>
-
       <FormGroup className="booking__form d-inline-block me-4 mb-4">
-        <input type="date" placeholder="Journey Date" />
+        <input type="text" placeHolder="Car" name="car" defaultValue={car}/>
       </FormGroup>
-      <FormGroup className="booking__form d-inline-block ms-1 mb-4">
-        <input
-          type="time"
-          placeholder="Journey Time"
-          className="time__picker"
-        />
-      </FormGroup>
-
       <FormGroup>
         <textarea
           rows={5}
           type="textarea"
           className="textarea"
           placeholder="Write"
+          name="message"
         ></textarea>
       </FormGroup>
-    </Form>
+      <button className=" booking__form" type="submit">
+                  Book Now
+                </button>
+    </form>
   );
 };
 
