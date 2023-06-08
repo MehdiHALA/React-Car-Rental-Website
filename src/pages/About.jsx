@@ -52,7 +52,7 @@ const About = () => {
           </Row>
         </Container>
       </section>
-      <a href="https://api.whatsapp.com/send?phone=0021211575738&text=Bonjour," className="float" target="_blank" rel="noreferrer">
+      <a href="https://api.whatsapp.com/send?phone=212611575738&text=Bonjour," className="float" target="_blank" rel="noreferrer">
         <i className="fa fa-whatsapp my-float"></i>
       </a>
     </Helmet>

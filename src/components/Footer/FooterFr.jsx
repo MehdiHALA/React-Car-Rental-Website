@@ -7,7 +7,7 @@ import "../../styles/footer.css";
 const quickLinks = [
   {
     path: "/about",
-    display: "About",
+    display: "À propos",
   },
 
   {
@@ -17,15 +17,15 @@ const quickLinks = [
 
   {
     path: "/cars",
-    display: "Car Listing",
+    display: "Nos Voitures",
   },
   {
     path: "/contact",
-    display: "Contact",
+    display: "Contactez nous",
   },
 ];
 
-const FooterFr = () => {
+const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
   return (
@@ -44,12 +44,10 @@ const FooterFr = () => {
               </h1>
             </div>
             <p className="footer__logo-content">
-            Contact Good City Cars today for reliable and quality car rentals in Marrakech. We are committed to exceptional customer service, competitive pricing, and convenient online booking. Experience the freedom of exploring Marrakech with our trusted car rental services. Your satisfaction is our priority.            </p>
-          </Col>
-
+            Contactez Good City Cars dès aujourd'hui pour une location de voiture fiable et de qualité à Marrakech. Nous nous engageons à offrir un service client exceptionnel, des prix compétitifs et une réservation en ligne pratique. Découvrez la liberté d'explorer Marrakech avec nos services de location de voitures de confiance. Votre satisfaction est notre priorité. </p>          </Col>
           <Col lg="2" md="4" sm="6">
             <div className="mb-4">
-              <h5 className="footer__link-title">Quick Links</h5>
+              <h5 className="footer__link-title">Liens rapides</h5>
               <ListGroup>
                 {quickLinks.map((item, index) => (
                   <ListGroupItem key={index} className="p-0 mt-3 quick__link">
@@ -62,13 +60,13 @@ const FooterFr = () => {
 
           <Col lg="3" md="4" sm="6">
             <div className="mb-4">
-              <h5 className="footer__link-title mb-4">Head Office</h5>
+              <h5 className="footer__link-title mb-4">Fouad HALA</h5>
               <p className="office__info">Marrakech</p>
-              <p className="office__info">Phone: (+212)6 11 57 57 38</p>
+              <p className="office__info">Téléphone: (+212)6 11 57 57 38</p>
 
               <p className="office__info">Email: fouadhala@goodcitycars.com</p>
 
-              <p className="office__info">Available 24/7 via message</p>
+              <p className="office__info">Disponible 24/7 par message</p>
             </div>
           </Col>
 
@@ -85,4 +83,4 @@ const FooterFr = () => {
   );
 };
 
-export default FooterFr;
+export default Footer;

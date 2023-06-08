@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, FormGroup, Input } from "reactstrap";
-import Helmet from "../components/Helmet/Helmet";
-import CommonSection from "../components/UI/CommonSection";
+import Helmet from "../../components/Helmet/Helmet";
+import CommonSection from "../../components/UI/CommonSection";
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 
-import "../styles/contact.css";
+import "../../styles/contact.css";
 
 const socialLinks = [
   {
@@ -20,7 +20,7 @@ const socialLinks = [
   },
 ];
 
-export const Contact = () => {
+export const ContactFr = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -41,21 +41,21 @@ export const Contact = () => {
         <Container>
           <Row>
             <Col lg="7" md="7">
-              <h6 className="fw-bold mb-4">Get In Touch</h6>
+              <h6 className="fw-bold mb-4">Nous contacter</h6>
               <form ref={form} onSubmit={sendEmail}>
               <FormGroup className="contact__form">
-                  <Input placeholder="Your Name" type="text" name="user_name"/>
+                  <Input placeholder="Votre nom" type="text" name="user_name"/>
                 </FormGroup>
                 <FormGroup className="contact__form">
                   <Input placeholder="Email" type="email" name="user_email"/>
                 </FormGroup>
                 <FormGroup className="contact__form">
-                  <Input placeholder="Phone Number" type="text" name="user_number"/>
+                  <Input placeholder="Numéro de téléphone" type="text" name="user_number"/>
                 </FormGroup>
                 <FormGroup className="contact__form">
                   <textarea
                     rows="5"
-                    placeholder="Message"
+                    placeholder="Votre message"
                     className="textarea"
                     name="message"
                   ></textarea>
@@ -69,12 +69,12 @@ export const Contact = () => {
 
             <Col lg="5" md="5">
               <div className="contact__info">
-                <h6 className="fw-bold">Contact Information</h6>
+                <h6 className="fw-bold">Contactez-nous</h6>
                 <p className="section__description mb-0">
                   Marrakech
                 </p>
                 <div className=" d-flex align-items-center gap-2">
-                  <h6 className="fs-6 mb-0">Phone:</h6>
+                  <h6 className="fs-6 mb-0">Téléphone:</h6>
                   <p className="section__description mb-0">(+212)6 11 57 57 38</p>
                 </div>
 
@@ -83,7 +83,7 @@ export const Contact = () => {
                   <p className="section__description mb-0">fouadhala@goodcitycars.com</p>
                 </div>
 
-                <h6 className="fw-bold mt-4">Follow Us</h6>
+                <h6 className="fw-bold mt-4">Suivez-nous</h6>
 
                 <div className=" d-flex align-items-center gap-4 mt-3">
                   {socialLinks.map((item, index) => (
@@ -108,4 +108,4 @@ export const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactFr;

@@ -10,23 +10,23 @@ import LanguageSwitcher from "../LanguageSwitcher"; // Import the LanguageSwitch
 const navLinks = [
   {
     path: "/home",
-    display: "Home",
+    display: "Acceuil",
   },
   {
     path: "/about",
-    display: "About",
+    display: "À propos",
   },
   {
     path: "/cars",
-    display: "Cars",
+    display: "Nos voitures",
   },
   {
     path: "/contact",
-    display: "Contact",
+    display: "Contactez nous",
   },
 ];
 
-const Header = () => {
+const HeaderFr = () => {
   const menuRef = useRef(null);
 
   const toggleMenu = () => menuRef.current.classList.toggle("menu__active");
@@ -39,7 +39,7 @@ const Header = () => {
           <Row>
             <Col lg="6" md="6" sm="6">
               <div className="header__top__left">
-                <span>Need Help?</span>
+                <span>Besoin d'aide?</span>
                 <span className="header__top__help">
                   <i class="ri-phone-fill"></i> (+212)6 11 57 57 38
                 </span>
@@ -76,7 +76,7 @@ const Header = () => {
                 </span>
                 <div className="header__location-content">
                   <h4>Marrakech</h4>
-                  <h6>Morocco</h6>
+                  <h6>Maroc</h6>
                 </div>
               </div>
             </Col>
@@ -87,8 +87,8 @@ const Header = () => {
                   <i class="ri-time-line"></i>
                 </span>
                 <div className="header__location-content">
-                  <h4>Monday to Sunday</h4>
-                  <h6>9am - 11pm</h6>
+                  <h4>De Lundi à Dimanche</h4>
+                  <h6>9h - 23h</h6>
                 </div>
               </div>
             </Col>
@@ -101,7 +101,7 @@ const Header = () => {
             >
               <button className="header__btn btn ">
                 <Link to="/contact">
-                  <i class="ri-phone-line"></i> Request a call
+                  <i class="ri-phone-line"></i> Demander un appel
                 </Link>
               </button>
             </Col>
@@ -149,4 +149,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderFr;

@@ -1,0 +1,19 @@
+.languageSwitcher {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.languageSwitcher img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.languageSwitcher span {
+  font-size: 14px;
+  font-weight: bold;
+}

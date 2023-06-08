@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import carData from "../assets/data/carData";
+import carData from "../../assets/data/fr/carData";
 import { Container, Row, Col } from "reactstrap";
-import Helmet from "../components/Helmet/Helmet";
+import Helmet from "../../components/Helmet/Helmet";
 import { useParams } from "react-router-dom";
-import BookingForm from "../components/UI/BookingForm";
+import BookingForm from "../../components/UI/fr/BookingForm";
 
-const CarDetails = () => {
+const CarDetailsFr = () => {
   const { slug } = useParams();
 
   const singleCarItem = carData.find((item) => item.carName === slug);
@@ -95,4 +95,4 @@ const CarDetails = () => {
   );
 };
 
-export default CarDetails;
+export default CarDetailsFr;
