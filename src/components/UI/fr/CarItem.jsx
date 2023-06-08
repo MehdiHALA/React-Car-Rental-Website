@@ -29,11 +29,11 @@ const CarItem = (props) => {
           </div>
 
           <button className=" w-50 car__item-btn car__btn-rent">
-            <Link to={`/cars/${carName}`}>Louer</Link>
+            <Link to={`/fr/cars/${carName}`}>Louer</Link>
           </button>
 
           <button className=" w-50 car__item-btn car__btn-details">
-            <Link to={`/cars/${carName}`}>Détails</Link>
+            <Link to={`/fr/cars/${carName}`}>Détails</Link>
           </button>
         </div>
       </div>

@@ -59,7 +59,7 @@ const HeaderFr = () => {
             <Col lg="4" md="3" sm="4">
               <div className="logo">
                 <h1>
-                  <Link to="/home" className=" d-flex align-items-center gap-2">
+                  <Link to="/fr/home" className=" d-flex align-items-center gap-2">
                     <i class="ri-car-line"></i>
                     <span>
                       Good City <br /> Cars

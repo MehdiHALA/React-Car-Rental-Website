@@ -9,12 +9,12 @@ const carData = [
     brand: "Renault",
     carName: "Renault Kadjar",
     imgUrl: img01,
-    model: "Model-2020",
+    model: "Modèle-2020",
     price: 450,
-    gps: "GPS Navigation",
-    automatic: "Automatic",
+    gps: "Navigation GPS",
+    automatic: "Automatique",
     description:
-      " Experience the ultimate convenience and comfort of the Renault Kadjar from our reputable car rental company. With its automatic transmission, this stylish SUV offers a smooth and effortless driving experience. Enjoy the spacious interior, advanced features, and stylish design of the Renault Kadjar as you embark on your journey. Rent the Renault Kadjar from us and discover the joy of automatic driving.",
+      "Découvrez le Renault Kadjar : un SUV automatique polyvalent au design élégant, idéal pour les déplacements en ville et les escapades en pleine nature. Avec sa transmission automatique fluide, conduire le Renault Kadjar est un véritable plaisir. Profitez de son habitacle confortable et spacieux, ainsi que de ses fonctionnalités technologiques avancées. Le Renault Kadjar automatique est prêt à vous accompagner dans tous vos trajets, que ce soit au quotidien ou lors de vos aventures.",
   },
 
   {
@@ -22,12 +22,12 @@ const carData = [
     brand: "Volkswagen",
     carName: "Volkswagen Touareg",
     imgUrl: img02,
-    model: "Model-2017",
+    model: "Modèle-2017",
     price: 800,
-    gps: "GPS Navigation",
-    automatic: "Manual",
+    gps: "Navigation GPS",
+    automatic: "Manuelle",
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "Découvrez la Volkswagen Touareg : un SUV élégant et polyvalent conçu pour les aventures urbaines. Avec son design raffiné et ses performances agiles, cette voiture est parfaite pour se faufiler dans les rues de la ville en toute simplicité. Plongez dans son intérieur moderne et confortable, où des fonctionnalités innovantes et des commandes intuitives créent une expérience de conduite agréable. Que vous vous rendiez au travail ou que vous exploriez la ville, la Volkswagen Touareg offre un équilibre parfait entre style, efficacité et maniabilité. Profitez pleinement du plaisir de conduire dans la Volkswagen Touareg.",
   },
 
   {
@@ -35,12 +35,12 @@ const carData = [
     brand: "Peugeot",
     carName: "Peugeot 208",
     imgUrl: img03,
-    model: "Model-2022",
+    model: "Modèle-2022",
     price: 300,
-    gps: "GPS Navigation",
-    automatic: "Automatic",
+    gps: "Navigation GPS",
+    automatic: "Automatique",
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "Découvrez la Peugeot 208 : une citadine compacte et stylée conçue pour les aventures urbaines. Avec son design élégant et ses performances agiles, cette voiture est parfaite pour se faufiler dans les rues de la ville en toute simplicité. Plongez dans son intérieur moderne et confortable, où des fonctionnalités innovantes et des commandes intuitives créent une expérience de conduite agréable. Que vous vous rendiez au travail ou que vous exploriez la ville, la Peugeot 208 offre un équilibre parfait entre style, efficacité et maniabilité. Profitez pleinement du plaisir de conduire dans la Peugeot 208.",
   },
 ];
 

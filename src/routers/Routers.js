@@ -1,5 +1,6 @@
 import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
+
 
 import Home from "../pages/Home";
 import About from "../pages/About";
@@ -18,10 +19,12 @@ import NotFound from "../pages/NotFound";
 
 
 const Routers = () => {
+  const location = useLocation();
+  const isFrenchPath = location.pathname.startsWith("/fr");
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/en/home" />} />
-      <Route path="/home" element={<Navigate to="/en/home" />} />
+      <Route path="/" element={isFrenchPath ? <Navigate to="/fr/home" /> : <Navigate to="/en/home" />} />
+      <Route path="/home" element={isFrenchPath ? <Navigate to="/fr/home" /> : <Navigate to="/en/home" />} />
 
 
       <Route path="/en/home" element={<Home />} />
